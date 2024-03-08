@@ -292,7 +292,7 @@ To proceed, kindly generate a file named `payload-request.xml` which will encomp
 
 ```xml
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
-				  xmlns:gs="http://spring.io/guides/gs-producing-web-service">
+				  xmlns:gs="http://spring.io/guides/countries-web-service">
    <soapenv:Header/>
    <soapenv:Body>
       <gs:getCountryRequest>

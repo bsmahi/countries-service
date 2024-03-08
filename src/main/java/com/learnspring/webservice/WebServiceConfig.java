@@ -38,12 +38,12 @@ public class WebServiceConfig extends WsConfigurerAdapter {
     // countries.xsd
     // DefaultWsdl11Definition exposes a standard WSDL 1.1 by using XsdSchema
     @Bean(name = "countries")
-    public DefaultWsdl11Definition defaultWsdl11Definition(XsdSchema countriesSchema) {
+    public DefaultWsdl11Definition defaultWsdl11Definition(XsdSchema xsdSchema) {
         var wsdl11Definition = new DefaultWsdl11Definition();
         wsdl11Definition.setPortTypeName("CountriesPort");
         wsdl11Definition.setLocationUri("/ws");
         wsdl11Definition.setTargetNamespace("http://spring.io/guides/countries-web-service");
-        wsdl11Definition.setSchema(countriesSchema);
+        wsdl11Definition.setSchema(xsdSchema);
         return wsdl11Definition;
     }
 
