@@ -47,7 +47,6 @@ The project needs to include `wsdl4j` as dependencies in your build file i.e, `p
         <xs:complexType>
             <xs:sequence>
                 <xs:element name="name" type="xs:string"/>
-                <xs:element name="capital" type="xs:string"/>
             </xs:sequence>
         </xs:complexType>
     </xs:element>
